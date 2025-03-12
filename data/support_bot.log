@@ -1,0 +1,6 @@
+2025-03-07 17:14:44,802 - __main__ - INFO - Starting bot...
+2025-03-07 17:14:45,056 - __main__ - INFO - Bot started with 6 commands
+2025-03-07 17:14:45,056 - aiogram.dispatcher - INFO - Start polling
+2025-03-07 17:14:45,115 - aiogram.dispatcher - INFO - Run polling for bot @Evadav_start_bot id=7734023965 - 'Soft_Helpbot'
+2025-03-07 17:14:54,409 - aiogram.event - INFO - Update id=664570072 is handled. Duration 349 ms by bot id=7734023965
+2025-03-07 17:14:56,189 - aiogram.event - INFO - Update id=664570073 is handled. Duration 124 ms by bot id=7734023965

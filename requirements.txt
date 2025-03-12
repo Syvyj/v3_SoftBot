@@ -1,0 +1,5 @@
+aiogram==3.3.0
+python-dotenv==1.0.0
+aiohttp==3.9.3
+python-dateutil==2.8.2
+pathlib==1.0.1 
