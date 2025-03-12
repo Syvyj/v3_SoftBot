@@ -1,7 +1,3 @@
-#commands
-STOP-Bot: pkill -f "python3 bot.py" && python3 bot.py
-Run-bot: python3 bot.py
-
 # Telegram Бот Помічник
 
 Telegram бот, призначений для допомоги у встановленні та підтримці програмного забезпечення.
