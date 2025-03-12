@@ -1,39 +1,41 @@
+#commands
+STOP-Bot: pkill -f "python3 bot.py" && python3 bot.py
+Run-bot: python3 bot.py
 
+# Telegram Бот Помічник
 
-# Telegram Bot Helper
+Telegram бот, призначений для допомоги у встановленні та підтримці програмного забезпечення.
 
-A Telegram bot designed to help with software installation and support.
+## Можливості
 
-## Features
+- Допомога у встановленні трекера YaWare
+- Покрокові інструкції
+- FAQ та підтримка
+- Зв'язок з адміністраторами
+- Підтримка встановлення різних програм
 
-- YaWare tracker installation assistance
-- Step-by-step instructions
-- FAQ and support
-- Admin communication
-- Multi-program installation support
+## Вимоги
 
-## Requirements
+- Python 3.8 або вище
+- Підключення до інтернету
+- Токен Telegram бота
 
-- Python 3.8 or higher
-- Internet connection
-- Telegram Bot Token
-
-## Installation
+## Встановлення
 
 ### Windows
 
-1. Install Python 3.8+ from [python.org](https://www.python.org/downloads/)
-2. Clone or download this repository
-3. Open Command Prompt in the project directory
-4. Run the setup script:
+1. Встановіть Python 3.8+ з [python.org](https://www.python.org/downloads/)
+2. Клонуйте або завантажте цей репозиторій
+3. Відкрийте командний рядок у директорії проекту
+4. Запустіть скрипт налаштування:
    ```cmd
    python setup.py
    ```
 
 ### macOS/Linux
 
-1. Install Python 3.8+ if not installed:
-   - macOS (with Homebrew):
+1. Встановіть Python 3.8+, якщо він не встановлений:
+   - macOS (через Homebrew):
      ```bash
      brew install python
      ```
@@ -42,24 +44,24 @@ A Telegram bot designed to help with software installation and support.
      sudo apt update
      sudo apt install python3 python3-venv
      ```
-2. Clone or download this repository
-3. Open Terminal in the project directory
-4. Run the setup script:
+2. Клонуйте або завантажте цей репозиторій
+3. Відкрийте термінал у директорії проекту
+4. Запустіть скрипт налаштування:
    ```bash
    python3 setup.py
    ```
 
-## Configuration
+## Налаштування
 
-1. Get a Telegram Bot Token from [@BotFather](https://t.me/BotFather)
-2. Edit the `.env` file in the project directory:
+1. Отримайте токен Telegram бота у [@BotFather](https://t.me/BotFather)
+2. Відредагуйте файл `.env` у директорії проекту:
    ```
-   BOT_TOKEN=your_bot_token_here
-   ADMIN_CHAT_ID=your_admin_chat_id_here
-   TRACKER_ADMIN_CHAT_ID=your_tracker_admin_chat_id_here
+   BOT_TOKEN=ваш_токен_бота
+   ADMIN_CHAT_ID=ідентифікатор_чату_адміністраторів
+   TRACKER_ADMIN_CHAT_ID=ідентифікатор_чату_адміністраторів_трекера
    ```
 
-## Running the Bot
+## Запуск бота
 
 ### Windows
 ```cmd
@@ -71,53 +73,53 @@ A Telegram bot designed to help with software installation and support.
 .venv/bin/python bot.py
 ```
 
-## Project Structure
+## Структура проекту
 
 ```
 .
-├── bot.py              # Main bot file
-├── setup.py           # Setup script
-├── requirements.txt   # Python dependencies
-├── .env              # Environment variables
-├── README.md         # This file
-├── src/              # Source code
+├── bot.py              # Головний файл бота
+├── setup.py           # Скрипт налаштування
+├── requirements.txt   # Залежності Python
+├── .env              # Змінні середовища
+├── README.md         # Цей файл
+├── src/              # Вихідний код
 │   ├── __init__.py
-│   ├── handlers.py   # Message handlers
-│   ├── keyboards.py  # Keyboard layouts
-│   ├── texts.py      # Bot messages
-│   └── faq.py        # FAQ system
-├── data/             # Data storage
-└── images/           # Bot images
+│   ├── handlers.py   # Обробники повідомлень
+│   ├── keyboards.py  # Розкладки клавіатур
+│   ├── texts.py      # Повідомлення бота
+│   └── faq.py        # Система FAQ
+├── data/             # Зберігання даних
+└── images/           # Зображення бота
 ```
 
-## Troubleshooting
+## Вирішення проблем
 
 ### Windows
-- If you get "python not found", make sure Python is added to PATH during installation
-- Run Command Prompt as Administrator if you encounter permission errors
+- Якщо з'являється помилка "python not found", переконайтеся, що Python додано до PATH під час встановлення
+- Запустіть командний рядок від імені адміністратора, якщо виникають помилки з правами доступу
 
 ### macOS
-- If you get "command not found: python3", install Python using Homebrew
-- Make sure you have full disk access for Terminal in System Preferences
+- Якщо з'являється помилка "command not found: python3", встановіть Python через Homebrew
+- Переконайтеся, що термінал має повний доступ до диску в налаштуваннях системи
 
 ### Linux
-- Install python3-venv if you get virtual environment errors:
+- Встановіть python3-venv, якщо виникають помилки з віртуальним середовищем:
   ```bash
   sudo apt install python3-venv
   ```
-- Make sure you have write permissions in the project directory
+- Переконайтеся, що у вас є права на запис у директорії проекту
 
-## Support
+## Підтримка
 
-If you encounter any issues:
-1. Check the Troubleshooting section
-2. Make sure all requirements are installed
-3. Verify your .env configuration
-4. Contact the administrator through the bot
+Якщо виникли проблеми:
+1. Перевірте розділ "Вирішення проблем"
+2. Переконайтеся, що всі залежності встановлено
+3. Перевірте конфігурацію файлу .env
+4. Зверніться до адміністратора через бота
 
-## License
+## Ліцензія
 
-This project is proprietary software. All rights reserved.
+Цей проект є власницьким програмним забезпеченням. Усі права захищені.
 
 ## Основні можливості
 
@@ -126,30 +128,6 @@ This project is proprietary software. All rights reserved.
 - Отримання посилань на завантаження
 - Звернення до системного адміністратора
 
-## Налаштування
-
-1. Встановіть необхідні залежності:
-```bash
-pip install -r requirements.txt
-```
-
-2. Налаштуйте токен бота:
-   - Отримайте токен у [@BotFather](https://t.me/BotFather)
-   - Встановіть змінну середовища:
-     ```bash
-     export BOT_TOKEN='your_bot_token_here'
-     ```
-   - Або створіть файл `.env` з вмістом:
-     ```
-     BOT_TOKEN=your_bot_token_here
-     ```
-
-## Запуск бота
-
-```bash
-python bot.py
-```
-
 ## Як модифікувати бота
 
 ### 1. Додавання нової програми
@@ -157,7 +135,7 @@ python bot.py
 - Додайте опис програми в `TEXTS["programs"]`:
 ```python
 "programs": {
-    "new_program": "🆕 New Program\n\nОпис нової програми."
+    "new_program": "🆕 Нова Програма\n\nОпис нової програми."
 }
 ```
 
