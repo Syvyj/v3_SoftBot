@@ -1,6 +1,4 @@
-#commands
-STOP-Bot: pkill -f "python3 bot.py" && python3 bot.py
-Run-bot: python3 bot.py
+
 
 # Telegram Bot Helper
 
